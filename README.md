@@ -1,53 +1,38 @@
 # Riverbed
 Open source Minecraft-inspired game made with [Bevy](https://bevyengine.org/) in Rust.
 
+## ⚠️ Archiving the repository
+I've been thinking for a long time that at a certain point I'd want to try and bring a commercial Riverbed game to life, based on the foundation laid in this repo.
+
+If succesful this would allow me to quit my day job and focus on this vision that I love, but I didn't want to do that until solid Bevy voxel foundations were laid here, in the open, to help other make their own "minecraft but better".
+
+With the rise of AI 2 things have happened:
+1. The value of this repository as a learning resource has gone down 
+2. Bringing my vision for a Riverbed game to life has become way easier
+
+Riverbed lacks polish but has already achieved a lot:
+- performant meshing with LODs (implemented in binary-greedy-meshing)
+- performant, biome-driven terrain generation
+- asset-based definitions of blocks, biome conditions, plants conditions, crafting recipe, block breaking, etc.  
+*all of this (mostly) AI-free*
+
+All of this is compatible with any voxel game, but I have a very specific vision for Riverbed.  
+The more I push towards this vision the less useful this repository becomes as a foundation for other games.
+
+Considering all of this, now is a good time for me to archive this repository and fully commit to the game I want to bring to life.
+
+That said, I will still contribute to voxels in other, more sustainable and useful ways:
+- maintaining separate voxel crates such as binary-greedy-meshing
+- doing open research on under-developped topics such as terrain generation, water sim, etc.
+
 ## Current state
 ![riverbed_new_pic](https://raw.githubusercontent.com/Inspirateur/riverbed/refs/heads/main/assets/screenshot.png)
 *featured on this screenshot is an infinitely generated, editable terrain, and a 4km render distance (250 in Minecraft)*  
-Single-player for now but it will be multi-player eventually ...
-
-## Hopes and dreams
-Riverbed doesn't aim to be a Minecraft clone - even though it totaly is atm - below are some distinctive aspects planned in the (far) future.
-
-### Push the player to work with the environment
-- 🌊 implement flowing rivers without infinite water creation  
-  *→ will force the player to divert river flow for irrigation*
-- 🌏 implement meaningful biomes, with a real impact on various plant growth  
-  *→ the player will need to be smart about cultivation*
-- 🌷 make every plant useful, by including them in a BOTW-inspired cooking system and some craft recipies  
-  *→ the player will want a foothold in every biome*
-- 🚂 make trains the fastest way of transportation (no elytras but gliders are cool)  
-  *→ finaly giving players a reason to build the pretty train circuits they always wanted to build*
-- 💎 make ores renewable  
-  *→ mines will be an asset that the player will want to manage, creating railways, lights, etc.*
-
-### Push the RPG aspect but don't shove it in the player's face
-- 👹 generate mobs in special mob structures, spawn very few mob outside of it  
-  *→ if the player decides to spend a few hours building something, let them be; they will need to fight for special craft ingredients anyway.*
-- ⚔️ make fighting interesting with multiple weapon types, varied enchantments, stamina, dodge and hit mechanics 
-- 💰 generate good loot that the player will actually want to find (in mob structures, ruins, etc.)
-- 📈 work on a good progression curve, the player shouldn't be able to reach the best metal/mineral in a few minutes
-
-### Quality of life
-Big render distance, pretty by default, no cap on items stack, etc.  
-There's a plethora of subtle features that makes a game enjoyable, Riverbed shall pay attention to them!
-
-## Development
-### Word from the author
-Hi, [@Inspirateur](https://github.com/Inspirateur) writing.
-Riverbed is a personal project so I plan to stay [BDFL](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life), I have a day job so I can only work on Riverbed on my free time, which varies a lot :) 
-
-I mean for the project to stay open source, to be an inspiration and learning resource for others, and will do my best to keep it well organized, with independant parts of the code published as crates for maximum reusability.
-
-I'm the primary contributor for now but if you agree with the game vision you're very welcomed to contribute, by creating issues or comments with advice/ressources! 🙂  
-*If you want to tackle an existing issue please __get in touch__ with me first on discord at '**inspirateur**'*
 
 ### Thanks
 - [@kokounet](https://github.com/kokounet): major contributions on rendering  
 *he's a big part of why Riverbed is able to reach 2km of render distance, many thanks!*
-- [Denis Périce](https://denis-perice.github.io/): helping me find the ideal water sim  
-*it's a work in progress but I'm very glad to have his help*
 - [@Involture](https://github.com/Involture): contributed to the efficient packing of chunk data in RAM  
 *one of the many invisible optimisations required to make such a game work*
 
-I'm also very grateful for Bevy - the engine powering the game - and the open source Rust ecosystem as a whole, which Riverbed (hopefully) will contribute back to.
+I'm also very grateful for Bevy - the engine powering the game - and the open source Rust ecosystem as a whole, which I will continue to contribute back to.
