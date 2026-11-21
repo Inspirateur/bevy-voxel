@@ -8,7 +8,7 @@ If succesful this would allow me to quit my day job and focus on this vision tha
 
 With the rise of AI 2 things have happened:
 1. The value of this repository as a learning resource has gone down 
-2. Bringing my vision for a Riverbed game to life has become way easier
+2. Bringing my vision to life has become way easier
 
 This project lacks polish but has already achieved a lot:
 - performant meshing with LODs (implemented in binary-greedy-meshing)
@@ -26,7 +26,7 @@ That said, I will still contribute to voxels in other, more sustainable and usef
 - doing open research on under-developped topics such as terrain generation, water sim, etc.
 
 ## Current state
-![riverbed_new_pic](https://raw.githubusercontent.com/Inspirateur/riverbed/refs/heads/main/assets/screenshot.png)
+![new_pic](https://raw.githubusercontent.com/Inspirateur/bevy-voxel/refs/heads/main/assets/screenshot.png)
 *featured on this screenshot is an infinitely generated, editable terrain, and a 4km render distance (250 in Minecraft)*  
 
 ### Thanks
