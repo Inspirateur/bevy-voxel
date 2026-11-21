@@ -10,7 +10,7 @@ With the rise of AI 2 things have happened:
 1. The value of this repository as a learning resource has gone down 
 2. Bringing my vision for a Riverbed game to life has become way easier
 
-Riverbed lacks polish but has already achieved a lot:
+This project lacks polish but has already achieved a lot:
 - performant meshing with LODs (implemented in binary-greedy-meshing)
 - performant, biome-driven terrain generation
 - asset-based definitions of blocks, biome conditions, plants conditions, crafting recipe, block breaking, etc.  
